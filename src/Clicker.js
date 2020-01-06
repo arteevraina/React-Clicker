@@ -7,15 +7,15 @@ const Clicker = () => {
     const[count,setCount] = useState(0)
 
     function handleInc() {
-        setCount(count + 1)
+        setCount((count) => count + 1)
     }
 
     function handleRes() {
-        setCount(0)
+        setCount((count) => count = 0)
     }
 
     function handleDec() {
-        setCount(count - 1)
+        setCount((count) => count- 1)
     }
 
         return(
